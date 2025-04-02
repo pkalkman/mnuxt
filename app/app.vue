@@ -1,8 +1,8 @@
 <template>
   <UApp>
     <NuxtRouteAnnouncer />
-    <UButton>Click me!</UButton>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </UApp>
 </template>
-
-
