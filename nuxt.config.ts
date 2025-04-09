@@ -9,5 +9,8 @@ export default defineNuxtConfig({
     port: 3080,
   },
   css: ['~/assets/css/main.css'],
-  modules: ['@nuxt/ui', '@nuxt/eslint']
-})
+  modules: ['@nuxt/ui', '@nuxt/eslint'],
+  runtimeConfig: {
+    openaiApiKey: '',
+  },
+});
