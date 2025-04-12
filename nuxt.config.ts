@@ -9,8 +9,14 @@ export default defineNuxtConfig({
     port: 3080,
   },
   css: ['~/assets/css/main.css'],
-  modules: ['@nuxt/ui', '@nuxt/eslint'],
+  modules: ['@nuxt/ui', '@nuxt/eslint', '@nuxtjs/mdc'],
   runtimeConfig: {
     openaiApiKey: '',
+  },
+  mdc: {
+    highlight: {
+      theme: 'material-theme-palenight',
+      langs: ['html', 'markdown', 'vue', 'javascript', 'typescript', 'css', 'scss', 'json', 'bash'],
+    },
   },
 });
